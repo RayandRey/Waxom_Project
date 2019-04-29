@@ -1,0 +1,128 @@
+.about_us{
+    background: #fbfaf8;
+    text-align: center;
+
+    .container{
+        position: relative;
+    }
+
+    &__content{
+        padding-top: 80px;
+    }
+
+    &__title{
+        margin-bottom: 34px;
+
+        h1{
+            font-family: $second__font;
+            font-size: 30px;
+            font-weight: 600;
+            color: #555555;
+        }
+    }
+
+    &__description{
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.75;
+        color: #8c8c8c;
+        margin-top: 18px;
+        padding: 0 20%;
+    }
+}
+
+
+.windows{
+    height: 482px;
+
+    &--middle{
+        width: 770px;
+        max-height: 482px;
+        position: absolute;
+        z-index: 75;
+        bottom: 0;
+        z-index: 100;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    &--left{
+        width: 770px;
+        max-height: 400px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    
+    &--right{
+        width: 770px;
+        max-height: 400px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+
+
+@media (max-width: 840px){
+    .about_us{
+        &__description{
+            padding: 0 10%;
+        }
+    }
+
+    .windows{
+        height: 380px;
+        &--left{
+            width: 80%;     
+            img{
+               width: 100%;
+            }
+        }
+    
+        &--right{
+            width: 80%;
+            img{
+               width: 100%;
+            }   
+        }
+    
+        &--middle{
+            width: 80%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 500px){
+    .about_us{
+
+        &__content{
+            padding-top: 50px;
+        }
+
+        &__title{
+            margin-bottom: 40px;
+            
+            h1{
+                font-size: 20px;
+            }
+        }
+
+        &__description{
+            font-size: 12px;
+            padding: 0;
+        }
+    }
+
+    .windows{
+        height: 210px;
+    }
+}

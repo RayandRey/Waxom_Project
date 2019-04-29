@@ -1,0 +1,163 @@
+.mobile{
+    padding: 79px 0 0;
+
+    &__content{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__left{
+        width: 423px;
+        height: 616px;
+        margin: 0 30px 0 77px;
+    }
+    
+    &__title{
+
+        h1{
+            font-family: $second__font;
+            font-size: 30px;
+            font-weight: 600;
+            color: #555555;
+        }
+    }
+
+    &__right{
+        padding-top: 116px;
+    }
+
+    &__description{
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.75;
+        color: #8c8c8c;
+        margin: 29px 0 39px;
+    }
+
+    &__list{
+        font-size: 16px;
+        font-weight: 300;
+        color: #8c8c8c;
+
+        li{
+            background: url("../img/icon/arrow.png") 0px no-repeat;
+            padding-left: 40px;
+            margin-left: 50px;
+            line-height: 2;
+        }
+    }
+}
+
+
+
+@media (max-width: 1195px){
+    .mobile{
+
+        &__left{
+            margin: 0;
+        }
+
+        &__right{
+            padding-top: 80px;
+        }
+
+        &__description{
+            font-size: 15px;
+            line-height: 1.5;
+            margin: 25px 0;
+        }
+    
+        &__list{
+            font-size: 13px;
+            font-weight: 300;
+            color: #8c8c8c;
+    
+            li{
+                background: url("../img/icon/arrow.png") 0px no-repeat;
+                padding-left: 30px;
+                margin-left: 0;
+                line-height: 2;
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 840px){
+    .mobile{
+
+        &__content{
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
+
+        &__right{
+            padding-top: 0;
+        }
+
+        &__title{
+
+            h1{
+                font-size: 25px;
+                text-align: center;
+            }
+        }
+
+        &__description{
+            font-size: 14px;
+            margin: 29px 0 29px;
+            padding: 0;
+        }
+
+        &__list{
+            font-size: 13px;
+        }
+        
+
+        &__left{
+            width: 317px;
+            height: 462px;
+            margin: 30px auto 0;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 500px){
+    .mobile{
+        padding: 50px 0 50px;
+        
+
+        &__title{
+
+            h1{
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+
+        &__description{
+            font-size: 12px;
+            margin: 20px 0;
+            padding: 0;
+        }
+
+        &__list{
+            font-size: 12px;  
+
+            li{
+                padding-left: 25px;
+                margin: 5px 0;
+                line-height: 2; 
+            }
+        }
+
+        &__left{
+            display: none;
+        }
+    }
+}

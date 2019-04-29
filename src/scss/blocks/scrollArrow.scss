@@ -1,0 +1,55 @@
+.scrollUp{
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    opacity: 0.7;
+    border: 2px solid $hover__color;
+    box-sizing: border-box;
+
+    &__arrow{
+        height: 22px;
+        width: 2px;
+        background: $hover__color;
+        position: relative;
+
+        &:before{
+            content:'';
+            position: absolute;
+            left: -5px;
+            top: -2px;
+            height: 15px;
+            width: 2px;
+            background: $hover__color;
+            transform: rotate(-135deg);
+        }
+
+        &:after{
+            content:'';
+            position: absolute;
+            right: -5px;
+            top: -2px;
+            height: 15px;
+            width: 2px;
+            background: $hover__color;
+            transform: rotate(135deg);
+        }
+    }
+
+    &:hover{
+        background: $hover__color;
+        opacity: 1;
+
+        .scrollUp__arrow,
+        .scrollUp__arrow:before,
+        .scrollUp__arrow:after{
+            background: #ffffff; 
+        }
+    }
+}

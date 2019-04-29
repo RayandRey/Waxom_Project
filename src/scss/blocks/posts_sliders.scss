@@ -1,0 +1,64 @@
+.posts{
+    &__photo{
+        .slick{
+            &-dots{
+                bottom: 20px;
+            }
+        }
+    }
+
+    &__gallery{
+
+        .slick-prev,
+        .slick-next {
+            background: url('../img/icon/posts-arrow.png') no-repeat;
+            height: 22px;
+            width: 22px;
+            position: absolute;
+            top: 105%;
+            z-index: 300;
+            border: 0;
+            color: transparent;
+            font-size: 0;
+            opacity: 0.6;
+
+            &:focus{
+                outline: 0;
+            }
+
+            &:hover{
+                opacity: 1;
+                cursor: pointer;
+            }  
+        }
+
+        .slick-prev {
+            left: 47%;
+        }
+
+        .slick-next {
+            background-position: -22px 0;
+            right: 47%;
+        }
+    }
+}
+
+
+@media (max-width: 840px){
+    .posts{
+        &__gallery{
+            .slick-prev,
+            .slick-next {
+                top: 102%;
+            }
+    
+            .slick-prev {
+                left: 43%;
+            }
+    
+            .slick-next {
+                right: 43%;
+            }
+        }
+    }
+}
